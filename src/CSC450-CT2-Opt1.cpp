@@ -31,12 +31,17 @@ int main() {
 		string combinedStrings = userInput1 + userInput2;
 
 		// Create vectors
-		userInputs.push_back("Input 1: " + userInput1 + "Input 2: "+ userInput2);
-		concatenatedInputs.push_back("Concatenated result: " + combinedStrings + "/n");
+		userInputs.push_back("Input 1: " + userInput1 + ", Input 2: "+ userInput2);
+		concatenatedInputs.push_back(", Concatenated result: " + combinedStrings);
 
 	}
 
 	// Print the inputs and results
+	for (size_t i =0; i < 3; i++){
+		cout << userInputs[i] << concatenatedInputs[i] << endl;
 
+	}
+
+	return 0;
 
 }
